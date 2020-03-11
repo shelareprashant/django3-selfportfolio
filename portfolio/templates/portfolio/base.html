@@ -8,7 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="icon" type="image/png" href="{% static "portfolio/dove.jpg" %}">
+  <link rel="icon" type="image/png" href="{% static "portfolio/dove1.jpg" %}">
+  <link rel="stylesheet" href="{% static "portfolio/custom.css" %}">
   <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}" >
   <title>Prashant Shelare</title>
 </head>
@@ -16,9 +17,9 @@
 <body>
 
   <nav id="topNav" class="navbar navbar-expand-md navbar-light">
-    <div class="container">
+    <div class="container border">
       <a class="navbar-brand" href="{% url 'home' %}">
-        <img src="{% static "portfolio/dove.jpg" %}" width="30" height="30" class="d-inline-block align-top" alt="Nick's Logo">
+        <img src="{% static "portfolio/dove1.jpg" %}" width="30" height="30" class="d-inline-block align-top" alt="Prashant's Logo">
         <span>Prashant Shelare</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +43,7 @@
       </div>
     </div>
   </nav>
-  <div class="container">
+  <div class="container border">
     {% block content %}{% endblock %}
   </div>
 
